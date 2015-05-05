@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: pink</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+
+<header class="header-short">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<a href="#" class="logo">Pink</a>
+				<nav role="navigation" class="main-nav"> <!--Заложить класс .active для развернутого вида -->
+					<ul class="menu">
+						<li class="menu-item active"><a href="#">Информация</a></li>
+						<li class="menu-item"><a href="#">Возможности</a></li>
+						<li class="menu-item"><a href="#">Отзывы</a></li>
+						<li class="menu-item"><a href="#">Стоимость</a></li>
+					</ul>
+				
+				<p class="h-header">Конкурс на самое безбашенное путешествие с Пинк</p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col text-align-center">
+				<p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+				 <form>
+		            <div class="fio">
+		                <label for="forename" class="imp">Имя:</label>
+		                <input type="text" name="forename" placeholder="Введите ваше имя" required>
+
+		                <label for="surname" class="imp">Фамилия:</label>
+		                <input type="text" name="surname" placeholder="Укажите фамилию" required>
+
+		                <label for="patronymic">Отчество:</label>
+		                <input type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
+		            </div>
+
+		            
+		            <div class="apps grey">
+		            <p class="imp label">С каким приложением путешествовали?</p>
+		                <input type="radio" name="apps" id="apps-1" value="1" checked>
+		                <label for="apps-1">Pink для iOS</label>
+		                
+		                <input type="radio" name="apps" id="apps-2" value="2">
+		                <label for="apps-2">Pink для Android</label>
+		                
+		                <input type="radio" name="apps" id="apps-3" value="3">
+		                <label for="apps-3">Windows Phone</label>
+		            </div>
+		            
+		            
+		            <div class="dates">
+		           		<p class="imp label">Когда вы путешествовали?</p>
+		            
+		                <input type="text" name="start-date" id="start-date" placeholder="1 апреля 2015" required>
+		                <label for="start-date">Дата выезда</label>
+
+
+		                <div class="days-qty">
+    						<span class="days-qty-minus btn">-</span>
+    						<input type="text" name="days-qty" id="days-qty" placeholder="10 дней" value="10" readonly>
+    						<span class="days-qty-plus btn">+</span>
+						</div> 
+		                <label for="days-qty">Продолжительность</label>
+
+		                <input type="text" name="end-date" id="end-date" placeholder="1 апреля 2015" readonly>
+		                <label for="end-date">Дата возвращения</label>
+		            </div>
+		            
+		            
+		            <div class="fellows gray">
+		                <label for="fellows-qty" class="imp">Количество попутчиков:</label>
+		                <div class="fellows-qty">
+    						<span class="fellows-qty-minus btn">-</span>
+    						<input type="text" name="fellows-qty" id="fellows-qty" placeholder="2 чел" value="2" readonly>
+    						<span class="fellows-qty-plus btn">+</span>
+						</div> 
+
+						<table class="fellows-details">
+							<tr>
+								<td><label for="fellow-number-1">№</label></td>
+								<td><label for="fellow-name-1" class="imp">Имя:</label></td>
+							</tr>
+							<tr>
+								<td><input type="text" name="fellow-number-1" id="fellow-number-1" placeholder="1" readonly></td>
+								<td><input type="text" name="fellow-name-1" id="fellow-name-1" placeholder="Введите ваше имя" required></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><label for="fellow-nick-1">Прозвище:</label></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="text" name="fellow-nick-1" id="fellow-nick-1" placeholder="Ну как же без этого!" required></td>
+							</tr>
+
+							<tr>
+								<td><label for="fellow-number-2">№</label></td>
+								<td><label for="fellow-name-2" class="imp">Имя:</label></td>
+							</tr>
+							<tr>
+								<td><input type="text" name="fellow-number-2" id="fellow-number-2" placeholder="2" readonly></td>
+								<td><input type="text" name="fellow-name-2" id="fellow-name-2" placeholder="Введите ваше имя" required></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><label for="fellow-nick-2">Прозвище:</label></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="text" name="fellow-nick-2" id="fellow-nick-2" placeholder="Ну как же без этого!" required></td>
+							</tr>
+						</table>
+		            </div>
+		            
+		            <div class="gains">
+		                <p class="label">Ваши безбашенные достижения в путешествии</p>
+		                
+		                <input type="checkbox" id="gain-1" value="1" checked>
+		                <label for="gain-1">Сделал селфи с акулой</label>
+		            
+		                <input type="checkbox" id="gain-2" value="2" checked>
+		                <label for="gain-2">Обгорел на пляже</label>
+		            
+		                <input type="checkbox" id="gain-3" value="3">
+		                <label for="gain-3">Видел Чака Норриса</label>
+		            
+		                <input type="checkbox" id="gain-4" value="4">
+		                <label for="gain-4">Накупил сувениров</label>
+		            
+		                <input type="checkbox" id="gain-5" value="5" checked>
+		                <label for="gain-5">Удержал башню</label>
+		                
+		                <input type="checkbox" id="gain-6" value="6">
+		                <label for="gain-6">Разгромил отель</label>
+		            </div>
+		            
+		            
+		            <div class="travel-pictures grey">
+		                <p class="imp label">Ваши фотографии из поездки:</p> 
+
+		                <a href="javascript:in_progress()" class="btn">Загрузить фото</a>
+		                <hr>
+		             	
+		             	<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-1.JPG</figcaption>
+		          		</figure>
+						
+						<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-2.JPG</figcaption>
+		          		</figure>
+
+						<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-3.JPG</figcaption>
+		          		</figure>
+
+						<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-4.JPG</figcaption>
+		          		</figure>
+
+						<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-5.JPG</figcaption>
+		          		</figure>
+
+						<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-6.JPG</figcaption>
+		          		</figure>
+
+						<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-7.JPG</figcaption>
+		          		</figure>
+
+						<figure>
+			                <a href="#"><img src="#"></a>
+			                <a href="javascript:in_progress()" class="btn pic-del">x</a>
+			                <figcaption>IMG-8.JPG</figcaption>
+		          		</figure>
+
+		            </div>
+		            
+
+		            <input type="submit" value="Отправить форму">
+		            
+		            <p><em>*</em>-Обязательные поля</p>
+		        </form>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<div class="container">	    
+
+	<a href="#" class="logo">Pink</a>
+        
+        <div class="socials">
+        	<a href="#" class="soc-icon icon-twitter"><span class="icon-n">Twitter</span></a>
+        	<a href="#" class="soc-icon icon-facebook"><span class="icon-n">Facebook</span></a>
+        	<a href="#" class="soc-icon icon-youtube"><span class="icon-n">Youtube</span></a>
+        </div>    
+        
+        
+        <p class="dev">Разработано <a href="#" class="dev-icon"><span class="icon-n">HTML Academy</span></a></p>
+
+    </div>
+</footer>
+
+  <!-- <p>Репозиторий создан для обучения на продвинутом онлайн-интенсиве «<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>».</p> -->
+
+  <!-- <script src="js/script.js"></script> -->
+  <script>
+  	function in_progress()
+  	{
+  		alert("Данная функция в разработке");
+  	}
+  </script>
+
+</body>
+</html>
+
