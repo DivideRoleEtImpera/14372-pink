@@ -9,9 +9,160 @@
 
 <body>
 
-  <p>Репозиторий создан для обучения на продвинутом онлайн-интенсиве «<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>».</p>
+<header class="header-full">
+	<div class="container">
+		<div class="row">
+			<div class="col text-align-center">
+				<a href="#" class="logo">Pink</a>
+				<nav role="navigation" class="main-nav"> <!--Заложить класс .active для развернутого вида -->
+					<ul class="menu">
+						<li class="menu-item active"><a href="#">Информация</a></li>
+						<li class="menu-item"><a href="#">Возможности</a></li>
+						<li class="menu-item"><a href="#">Отзывы</a></li>
+						<li class="menu-item"><a href="#">Стоимость</a></li>
+					</ul>
+				
+				<p class="h-header">Взгляните на жизнь иначе!</p>
+			</div>
+			<div class="col app-download black text-align-center">
+		            <a href="#" class="btn">Скачать приложение</a> 
+		            <div class="app-os">
+		                <a href="#" class="app-os-icon icon-apple"><span class="icon-n">Apple</span></a>
+		                <a href="#" class="app-os-icon icon-android"><span class="icon-n">Android</span></a>
+		                <a href="#" class="app-os-icon icon-windows"><span class="icon-n">Windows</span></a>
+		            </div>
+		            <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+		    </div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="container">
+		<div class="row">		
+			<div class="col promo1 text-align-center">
+				<p class="h-header">Устали от серости мегаполиса? Нам есть, что вам предожить!</p> <!--Непонятно как разбить текст-->	
+			</div>
+			<div class="col promo2 grey trapezium text-align-center">
+				<p class="h-blog">Поднимает настроение</p> <!-- Вообще по структуре заголовков это h3 --> 
+                <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            	<p class="h-blog">Меняет мир вокруг нас</p>
+                <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            	<p class="h-blog">Заводит новых друзей</p>
+                <p>Ставьте лайки, комментируйте, делитель фотографиями с друзьями и заводите новых</p>
+                <img src="#" alt="pink-smile"> <!--или фоном вставить?-->
+			</div>
+		</div>		
+
+		<div class="row">		
+			<div class="col comments text-align-center">
+				<div class="slider">
+					<input type="radio" id="comments-slider-btn-1" name="comments-slider-btns" checked>
+					<input type="radio" id="comments-slider-btn-2" name="comments-slider-btns">
+					<input type="radio" id="comments-slider-btn-3" name="comments-slider-btns">
+
+					<div class="slider-controls">
+						<label for="comments-slider-btn-1"></label>
+						<label for="comments-slider-btn-2"></label>
+						<label for="comments-slider-btn-3"></label>
+					</div>
+
+					<div class="slider-inner">
+						<div class="slider-slides">
+							<div class="slide">
+								<p class="h-blog">Николай Петров</p>  
+				                <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+				            </div>
+				            <!--<div class="slide">
+								<p class="h-blog">Николай Петров</p>  
+				                <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+				            </div>
+				            <div class="slide">
+								<p class="h-blog">Николай Петров</p>  
+				                <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+				            </div>-->
+		            	</div>
+		            </div>
+		        </div>
+			</div>
+		</div>		
+
+
+		<div class="row">		
+			<div class="col price grey trapezium text-align-center">
+				<div class="slider">
+					<input type="radio" id="price-slider-btn-1" name="price-slider-btns">
+					<input type="radio" id="price-slider-btn-2" name="price-slider-btns" checked>
+					<input type="radio" id="price-slider-btn-3" name="price-slider-btns">
+
+					<div class="slider-controls">
+						<label for="price-slider-btn-1"></label>
+						<label for="price-slider-btn-2"></label>
+						<label for="price-slider-btn-3"></label>
+					</div>
+
+					<div class="slider-inner">
+						<div class="slider-slides">
+							 <table>
+				               	<tr>
+				                    <th>Заголовок 1<span>??? USD</span>
+				                    </th>
+				                    <th>Стандарт<span>3,99 USD</span>
+				                    </th> 
+				                    <th>Заголовок 3<span>??? USD</span>
+				                    </th> 
+				                </tr>
+				                
+				                <tr>
+				                    <td>Ячейка 1</td>
+				                    <td>Розовый фильтр</td>
+				                    <td>Ячейка 3</td>
+				                </tr>
+				                
+				                <tr>
+				                	<td>Ячейка 1</td>
+				                    <td>Смайлики</td>
+				                    <td>Ячейка 3</td>
+				                </tr>
+				                
+				                <tr>
+				                    <td>Ячейка 1</td>
+				                    <td>Комментарии</td>
+				                    <td>Ячейка 3</td>
+				                </tr>
+				            </table>
+		            	</div>
+		            </div>
+		        </div>
+			</div>
+		</div>		
+
+		<div class="row">
+			<div class="col contacts stake text-align-center">
+				<p class="h-header">Остались вопросы? <br>Свяжитесь с нами!</p>
+				<dl class="contacts">
+					<dt>Звоните:</dt>
+					<dd>+7 (812) 555-66-66</dd>
+					<dt>Пишите:</dt>
+					<dd>mail@htmlacademy.ru</dd>
+					<dt>Приезжайте в гости:</dt>
+					<dd>ул. Большая Конюшенная, 19/8</dd>
+				</dl>
+			</div>
+		</div>
+
+		<div class="map-wrapper">
+			<div id="map"></div>
+			<div class="map-details"><!-- Не совсем понятно что за функциональность на красной точке --></div>
+		</div>
+
+	</div> <!-- container -->
+</main>
+
+  <!-- <p>Репозиторий создан для обучения на продвинутом онлайн-интенсиве «<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>».</p> -->
 
   <!-- <script src="js/script.js"></script> -->
 
 </body>
 </html>
+
