@@ -1,0 +1,234 @@
+//Types
+
+
+//Font Variables
+
+@font-family:'Open Sans', sans-serif;
+
+@font-weight-light:300;
+@font-weight-normal:400;
+@font-weight-bold:700;
+
+@text-color-white: #ffffff;
+@text-color-white: #ffffff;
+@text-color-grey: #283645; //цвет текста на сером фоне
+@text-color-black: #000000;
+@text-color-red:#d22856; 
+
+
+// --------------------
+//Article
+// --------------------
+
+
+.body {
+	
+	font-family: @font-family;
+
+}
+
+.h1 {
+	
+	font-size: 24px;
+	line-height: 1.2;
+	line-weight: @font-weight-light;
+	color: @text-color-white;	
+}
+
+
+.h2 {
+	
+	font-size: 30px;	
+	line-height: 24px;
+	line-weight: @font-weight-bold;	
+	color: @text-color-grey;
+}
+
+
+.h2-black {
+
+	&:extend(.h2);
+	color: @text-color-black;
+}
+
+
+.h3 {
+
+	font-size: 18px;	
+	line-height: 30px;
+	line-weight: @font-weight-bold;
+	color: @text-color-grey;
+}
+
+
+.h3-black {
+
+	&:extend(.h3);
+	color: @text-color-black;
+}
+
+
+.p {
+	
+	font-size: 14px;	
+	line-height: 27px;
+	line-weight: @font-weight-normal;
+	color: @text-color-grey;
+}
+
+.p-wideline {
+	&:extend(.p);
+	line-height: 30px;
+}
+
+.p-narrowline {
+	&:extend(.p);
+	line-height: 24px;
+}
+
+
+.link {
+	&:extend(.p);
+	color: @text-color-red;
+}
+
+
+.fdatatime {
+	
+	font-size: 12px;	
+	line-height: 27px;
+	line-weight: @font-weight-normal;
+	color: @text-color-red;	
+}
+
+
+.fabstract {
+
+	font-size: 16px;	
+	line-height: 27px;
+	line-weight: @font-weight-normal;
+	color: @text-color-grey;	
+	
+}
+
+//--------------
+//Promo on the index page
+//--------------
+
+.fpromo-text-grey {
+	
+	font-size: 24px;
+	line-height: 1.2;
+	line-weight: @font-weight-light;
+	color: @text-color-grey;	
+}
+
+.fdownload__btn {
+	
+	font-size: 18px;
+	line-height: 18px;
+	line-weight: @font-weight-bold; 
+	color: @text-color-white;	
+}
+
+
+.fdownload__p {	
+
+	font-size: 14px;	
+	line-height: 24px;
+	line-weight: @font-weight-light;
+	color: @text-color-white;
+}
+
+
+.fpricelist-set {
+
+	font-size: 18px;	
+	line-height: 30px;
+	line-weight: @font-weight-bold;
+	color: @text-color-white;
+	text-transform: uppercase;
+	
+}
+
+.fpricelist-price {
+	
+	font-size: 24px;	
+	line-height: 30px;
+	line-weight: @font-weight-light;
+	color: @text-color-white;
+	text-transform: uppercase;
+
+}
+
+
+.fprice-features {
+
+	font-size: 14px;	
+	line-height: 30px;
+	line-weight: @font-weight-normal;
+	color: @text-color-grey;
+	text-transform: uppercase;
+	
+}
+
+.fcontacts {
+	
+	font-size: 24px;	
+	line-height: 28px;
+	line-weight: @font-weight-light;
+	color: @text-color-red;
+}
+
+
+//-------------------------
+//Forms and buttons
+//-------------------------
+
+
+.flabel {
+
+	font-size: 14px;	
+	line-height: 30px;
+	line-weight: @font-weight-normal;
+	color: @text-color-red;
+	text-transform: uppercase;
+}
+
+
+.fcomment {
+
+	font-size: 14px;	
+	line-height: 30px;
+	line-weight: @font-weight-normal;
+	color: @text-color-grey;
+	text-transform: uppercase;	
+}
+
+
+.fplaceholder 
+.fcheckbox
+.fradiobtn {
+
+	font-size: 18px;	
+	line-height: 30px;
+	line-weight: @font-weight-normal;
+	color: @text-color-grey;
+	
+}
+
+
+.fbtn {
+	font-size: 18px;	
+	line-height: 30px;
+	line-weight: @font-weight-bold;
+	color: @text-color-grey;
+	text-transform: uppercase;
+}
+
+.fbtn-white {
+	
+	&:extend(.fsubmit);
+	color: @text-color-grey;
+}
+

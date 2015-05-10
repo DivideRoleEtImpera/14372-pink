@@ -9,75 +9,76 @@
 
 <body>
 
-<header class="header-short">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<a href="#" class="logo">Pink</a>
-				<nav role="navigation" class="main-nav"> <!--Заложить класс .active для развернутого вида -->
-					<ul class="menu">
-						<li class="menu-item active"><a href="#">Информация</a></li>
-						<li class="menu-item"><a href="#">Возможности</a></li>
-						<li class="menu-item"><a href="#">Отзывы</a></li>
-						<li class="menu-item"><a href="#">Стоимость</a></li>
-					</ul>
-				
-				<p class="h-header">Блог путешественников, пользователей Пинк</p>
-			</div>
+<div class="page-wrapper">
+
+	<header class="page-header  page-header--short">
+		<div class="box">
+								
+			<nav role="navigation" class="main-nav"> <!--Заложить класс .active для развернутого вида -->
+				<a href="#" class="logo logo--size-s">
+					<img class="logo__img" src="img/logo.png" alt="PINK">
+				</a>	
+				<ul class="main-nav__list">
+					<li class="main-nav__item active"><a class="main-nav__link" href="#">Информация</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
+				</ul>
+			</nav>
+			
+			<h1 class="page-header__title">Блог путешественников, пользователей Пинк</h1>			
 		</div>
-	</div>
-</header>
+	</header>
 
-<main>
-	<div class="container">
-		<div class="row">
-			<div class="col post">
-				<a class="h-blog">Антон и Надя в Тайланде</a>
-				<time datetime="2014-11-02">Опубликовано: 6 месяцев назад</time>
-				<p>Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
-			</div>
-			<div class="col post">
-				<a class="h-blog">Гастрольный тур "Кубанских борщеваров"</a>
-				<time datetime="2009-05-02">Опубликовано: 5 лет назад</time>
-				<p>Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также средннему) зарубежью.</p>
-			</div>
-			<div class="col post">
-				<a class="h-blog">Чета Болонских в Париже</a>
-				<time datetime="1915-05-02">Опубликовано: 100 лет назад</time>
-				<p>Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайту криминально-исторический трактат в двух томах.</p>
-			</div>
-			<div class="col post">
-				<a class="h-blog">Путешествие на яхте сеньора Христофора</a>
-				<time datetime="1492-05-02">Опубликовано: 523 года назад</time>
-				<p>Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p>
-			</div>
-			<div class="paginator">
-				<span class="btn current">1</span>
-				<a href="" class="btn">2</a>
-				<a href="" class="btn">3</a>
-				<a href="" class="btn">4</a>
-			</div>
+
+	<main class="page-details">
+		<div class="box rss-post">
+			<h2 class="rss-post__heading"> <a class="rss-post__link">Антон и Надя в Тайланде</a></h2>
+			<time class="rss-post__pubdate" datetime="2014-11-02">Опубликовано: 6 месяцев назад</time>
+			<p class="rss-post__text">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
 		</div>
-	</div>
-</main>
+		<div class="box rss-post">
+			<h2 class="rss-post__heading"> <a class="rss-post__link">Гастрольный тур "Кубанских борщеваров"</a></h2>
+			<time class="rss-post__pubdate" datetime="2009-05-02">Опубликовано: 5 лет назад</time>
+			<p class="rss-post__text">Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также средннему) зарубежью.</p>
+		</div>
+		<div class="box rss-post">
+			<h2 class="rss-post__heading"> <a class="rss-post__link">Чета Болонских в Париже</a></h2>
+			<time class="rss-post__pubdate" datetime="1915-05-02">Опубликовано: 100 лет назад</time>
+			<p class="rss-post__text">Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайту криминально-исторический трактат в двух томах.</p>
+		</div>
+		<div class="box rss-post">
+			<h2 class="rss-post__heading"> <a class="rss-post__link">Путешествие на яхте сеньора Христофора</a></h2>
+			<time class="rss-post__pubdate" datetime="1492-05-02">Опубликовано: 523 года назад</time>
+			<p class="rss-post__text">Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p>
+		</div>
+		<div class="paginator js-paginator">
+			<span class="btn btn--size-s btn--checked js-paginator__btn">1</span>
+			<a class="btn btn--size-s js-paginator__btn" href="">2</a>
+			<a class="btn btn--size-s js-paginator__btn" href="">3</a>
+			<a class="btn btn--size-s js-paginator__btn" href="">4</a>
+		</div>
+	</main>
 
-<footer>
-	<div class="container">	    
+	<footer class="page-footer">
+		<div class="box">	    
 
-	<a href="#" class="logo">Pink</a>
-        
-        <div class="socials">
-        	<a href="#" class="soc-icon icon-twitter"><span class="icon-n">Twitter</span></a>
-        	<a href="#" class="soc-icon icon-facebook"><span class="icon-n">Facebook</span></a>
-        	<a href="#" class="soc-icon icon-youtube"><span class="icon-n">Youtube</span></a>
-        </div>    
-        
-        
-        <p class="dev">Разработано <a href="#" class="dev-icon"><span class="icon-n">HTML Academy</span></a></p>
+		<a href="#" class="logo logo--size-l">
+			<img class="logo__img" src="img/logo.png" alt="PINK">
+		</a>
+	        
+	     <ul class="social-icons">
+	     	<li class="social-icons__item"><a href="#" class="icon icon__twitter"><span class="icon__hint">Twitter</span></a></li>
+	     	<li class="social-icons__item"><a href="#" class="icon icon__facebook"><span class="icon-hint">Facebook</span></a></li>
+	     	<li class="social-icons__item"><a href="#" class="icon icon__youtube"><span class="icon-hint">Youtube</span></a></li>
+	    </div>    
+	        
+		<p class="copyright">Разработано <a href="#" class="icon icon__HTMLAcademy"><span class="icon-hint">HTML Academy</span></a></p>
 
-    </div>
-</footer>
+	    </div>
+	</footer>
 
+</div>
   <!-- <p>Репозиторий создан для обучения на продвинутом онлайн-интенсиве «<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>».</p> -->
 
   <!-- <script src="js/script.js"></script> -->
