@@ -35,69 +35,68 @@
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
-    <main class="page-details">
+    <main class="page-main">
       <form class="form">
 
         <p class="form__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
         </p>
 
-        <fieldset class="personal-info form__fieldset">
+        <fieldset class="form__fieldset">
 
           <label class="form__label" for="forename">Имя:</label>
-          <input class="form__text-fld" type="text" id="forename" name="forename" placeholder="Введите ваше имя" required>
+          <input class="form__input" type="text" id="forename" name="forename" placeholder="Введите ваше имя" required>
 
           <label class="form__label" for="surname">Фамилия:</label>
-          <input class="form__text-fld" type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
+          <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
 
           <label class="form__label" for="patronymic">Отчество:</label>
-          <input class="form__text-fld" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" required></fieldset>
+          <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" required></fieldset>
 
-        <fieldset class="travel-app form__fieldset">
+        <fieldset class="form__fieldset">
 
-          <legend "form__legend">С каким приложением путешествовали?</legend>
+          <legend class="form__legend">С каким приложением путешествовали?</legend>
 
-          <div class="form__radio-group">
+            <div class="radioset">
+              <input class="radioset__btn"  type="radio" name="travel-apps" id="app01" value="1">
+              <label class="radioset__label" for="app01">Pink для iOS</label>
 
-            <label>
-              <input class="form__radio-btn"  type="radio" name="travel-apps" id="app01" value="1">Pink для iOS</label>
+              <input class="form__radio-btn" type="radio" name="travel-apps" id="app02" value="2">
+              <label class="radioset__label" for="app01">Pink для Android</label>
 
-            <label>
-              <input type="form__radio-btn" class="radio__control" name="js-travel-apps" id="app02" value="2">Pink для Android</label>
+              <input class="form__radio-btn" type="radio" name="travel-apps" id="app03" value="3">
+              <label class="radioset__label" for="app01">Pink для Phone</label>
+            </div>
 
-            <label>
-              <input type="form__radio-btn" class="radio__control" name="js-travel-apps" id="app03" value="3">Pink для Phone</label>
-
-          </div>
 
         </fieldset>
 
-        <fieldset class="travel-dates form__fieldset">
+        <fieldset class="form__fieldset">
 
           <legend class="form__legend form__legend--required">Когда вы путешествовали?</legend>
 
-          <input class="form__text-fld" type="text" id="start-date" name="start-date" placeholder="Дата" value="1 апреля 2015" required>
+          <input class="form__input" type="text" id="start-date" name="start-date" placeholder="Дата" value="1 апреля 2015" required>
           <label class="form__label form__label--centered" for="start-date">Дата выезда</label>
 
           <div class="counter">
             <a class="counter__btn">-</a>
-            <input class="form__text-fld counter__field" type="text" id="duration" name="duration" value="10 дней" readonly>
+            <input class="counter__input" type="text" id="duration" name="duration" value="10 дней" readonly>
             <a class="counter__btn">+</a>
+            <p class="counter__label">Продолжительность</p>
           </div>
-          <label class="form__label form__label--centered" for="duration">Продолжительность</label>
 
-          <input class="form__text-fld" type="text" id="end-date" name="end-date" value="1 апреля 2015" readonly>
+
+          <input class="form__input" type="text" id="end-date" name="end-date" value="1 апреля 2015" readonly>
           <label class="form__label form__label--centered" for="end-date">Дата возвращения</label>
 
         </fieldset>
 
         <fieldset class="form__fieldset">
 
-          <label for="js-fellows-count">Количество попутчиков</label>
-
           <div class="counter">
+            <p class="counter__label">Количество попутчиков</p>
             <a class="counter__btn">-</a>
-            <input class="form__text-fld counter__field" type="text" id="fellows-count" name="fellows-count" value="2 чел" readonly>
+            <input class="form__input counter__field" type="text" id="fellows-count" name="fellows-count" value="2 чел" readonly>
             <a class="counter__btn">+</a>
           </div>
 
@@ -105,16 +104,16 @@
             <!--Все колонки идут с отступом кроме поля индекса-->
 
             <div class="fellow__col fellow__col--index">
-              <label for="num-01">№</label>
-              <input class="form__text-fld" type="text" id="num-01" value="1" readonly disabled></div>
+              <label class="fellow__label" for="num-01">№</label>
+              <input class="fellow__input" type="text" id="num-01" name="num-01" value="1" readonly disabled></div>
 
             <div class="fellow__col">
-              <label for="name-01">Имя:</label>
-              <input class="form__text-fld" type="text" id="name-01" name="name-01" placeholder="Введите ваше имя" required></div>
+              <label class="fellow__label" for="name-01">Имя:</label>
+              <input class="fellow__input" type="text" id="name-01" name="name-01" placeholder="Введите ваше имя" required></div>
 
             <div class="fellow__col">
-              <input class="form__text-fld" type="text" id="nick-01" id="name-01" placeholder="Ну как же без этого!">
-              <label for="nick-01">Прозвище</label>
+              <label class="fellow__label" for="nick-01">Прозвище</label>
+              <input class="fellow__input" type="text" id="nick-01" name="name-01" placeholder="Ну как же без этого!">
             </div>
 
           </div>
@@ -123,16 +122,16 @@
             <!--Все колонки идут с отступом кроме поля индекса-->
 
             <div class="fellow__col fellow__col--index">
-              <label for="num-02">№</label>
-              <input class="form__text-fld" type="text" id="num-02" value="2" readonly disabled></div>
+              <label class="fellow__label" for="num-02">№</label>
+              <input class="fellow__input" type="text" id="num-02" name="num-02" value="1" readonly disabled></div>
 
             <div class="fellow__col">
-              <label for="name-02">Имя:</label>
-              <input class="form__text-fld" type="text" id="name-02" name="name-02" placeholder="Введите ваше имя" required></div>
+              <label class="fellow__label" for="name-02">Имя:</label>
+              <input class="fellow__input" type="text" id="name-02" name="name-02" placeholder="Введите ваше имя" required></div>
 
             <div class="fellow__col">
-              <input class="form__text-fld" type="text" id="nick-02" id="name-02" placeholder="Ну как же без этого!">
-              <label for="nick-02">Прозвище</label>
+              <label class="fellow__label" for="nick-02">Прозвище</label>
+              <input class="fellow__input" type="text" id="nick-02" name="name-02" placeholder="Ну как же без этого!">
             </div>
 
           </div>
@@ -143,25 +142,25 @@
 
           <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
 
-          <div class="form__checkbox-group">
+          <div class="checkboxset">
 
-            <label>
-              <input class="form__checkbox-btn" type="checkbox" name="gains" id="gains01" value="1" checked>Сделал селфи с акулой</label>
+              <input class="checkboxset__btn" type="checkbox" name="gains" id="gains01" value="1" checked>
+              <label class="checkboxset__label" for="gains01">Сделал селфи с акулой</label>
 
-            <label>
-              <input class="form__checkbox-btn" type="checkbox" name="gains" id="gains02" value="2" checked>Обгорел на пляже</label>
+              <input class="checkboxset__btn" type="checkbox" name="gains" id="gains02" value="2" checked>
+              <label class="checkboxset__label" for="gains02">Обгорел на пляже</label>
 
-            <label>
-              <input class="form__checkbox-btn" type="checkbox" name="gains" id="gains03" value="3">Видел Чака Норриса</label>
+              <input class="checkboxset__btn" type="checkbox" name="gains" id="gains03" value="3">
+              <label class="checkboxset__label" for="gains03">Видел Чака Норриса</label>
 
-            <label>
-              <input class="form__checkbox-btn" type="checkbox" name="gains" id="gains03" value="4">Накупил сувениров</label>
+              <input class="checkboxset__btn" type="checkbox" name="gains" id="gains04" value="4">
+              <label class="checkboxset__label" for="gains04">Накупил сувениров</label>
 
-            <label>
-              <input class="form__checkbox-btn" type="checkbox" name="gains" id="gains03" value="5" checked>Удержал башню</label>
+              <input class="checkboxset__btn" type="checkbox" name="gains" id="gains05" value="5" checked>
+              <label class="checkboxset__label" for="gains05">Удержал башню</label>
 
-            <label>
-              <input class="form__checkbox-btn" type="checkbox" name="gains" id="gains03" value="6">Разгромил отель</label>
+              <input class="checkboxset__btn" type="checkbox" name="gains" id="gains06" value="6">
+              <label class="checkboxset__label" for="gains06">Разгромил отель</label>
 
           </div>
 
@@ -175,55 +174,55 @@
             <!-- Способ взят отсюда http://habrahabr.ru/post/189570/ -->
             <button class="upload__btn btn" type="button">Загрузить фото</button>
             <div class="upload__placeholder">Файл не выбран</div>
-            <input class="upload__text-fld" type="file"></div>
+            <input class="upload__input" type="file"></div>
 
           <hr class="form__divider">
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
+            <img class="gallery__img" src="#" alt="">
             <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-1.JPG</div>
           </div>
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
-            <button class="gallery__delete-btn" href="">x</button>
+            <img class="gallery__img" src="#" alt="">
+            <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-2.JPG</div>
           </div>
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
-            <button class="gallery__delete-btn" href="">x</button>
+            <img class="gallery__img" src="#" alt="">
+            <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-3.JPG</div>
           </div>
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
-            <button class="gallery__delete-btn" href="">x</button>
+            <img class="gallery__img" src="#" alt="">
+            <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-4.JPG</div>
           </div>
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
-            <button class="gallery__delete-btn" href="">x</button>
+            <img class="gallery__img" src="#" alt="">
+            <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-5.JPG</div>
           </div>
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
-            <button class="gallery__delete-btn" href="">x</button>
+            <img class="gallery__img" src="#" alt="">
+            <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-6.JPG</div>
           </div>
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
-            <button class="gallery__delete-btn" href="">x</button>
+            <img class="gallery__img" src="#" alt="">
+            <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-7.JPG</div>
           </div>
 
           <div class="gallery__item">
-            <img class="gallery__img" src="#">
-            <button class="gallery__delete-btn" href="">x</button>
+            <img class="gallery__img" src="#" alt="">
+            <button class="gallery__delete-btn">x</button>
             <div class="gallery__label">IMG-8.JPG</div>
           </div>
 
@@ -259,7 +258,6 @@
         <a href="#" class="icon icon__HTMLAcademy" title="HTML Academy">HTML Academy</a>
       </p>
 
-    </div>
   </footer>
 
 </div>

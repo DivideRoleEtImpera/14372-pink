@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: pink</title>
-  <link rel="stylesheet" href="css/style.css"></head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
   <div class="page-wrapper">
     <header class="page-header  page-header--full">
-      <div class="box">
         <nav role="navigation" class="main-nav">
           <!--Заложить класс .active для развернутого вида -->
           <a href="#" class="logo logo--size-s">
@@ -33,17 +33,17 @@
         </nav>
 
         <p class="page-header__title">Взгляните на жизнь иначе!</p>
-      </div>
     </header>
 
-    <main class="page-details">
+    <main class="page-main">
+
 
       <div class="box">
 
         <div class="app-download">
           <a href="#" class="app-download__btn">Скачать приложение</a>
           <div class="app-download__iconset">
-            <a href="#" class="app-download__icon icon icon__apple" title"Apple">Apple</a>
+            <a href="#" class="app-download__icon icon icon__apple" title="Apple">Apple</a>
             <a href="#" class="app-download__icon icon icon__android" title="Android">Android</a>
             <a href="#" class="app-download__icon icon icon__windows" title="Windows">Windows</a>
           </div>
@@ -57,7 +57,8 @@
       <div class="box box--bg-grey box--form-trapecium">
 
         <div class="promo">
-          <p class="promo__title">Устали от серости мегаполиса? Нам есть, что вам предожить!</p>
+          <p class="promo__title">Устали от серости мегаполиса?</p>
+          <p class="promo__title">Нам есть, что вам предожить!</p>
           <div class="burst">
             <ul class="burst__list">
               <li class="burst__item">
@@ -80,88 +81,93 @@
               </li>
             </ul>
           </div>
-          <img class="promo__image" src="img/pic_promo-phone.jpg" height="320" width="157" alt="pink-smile"></img>
+          <img class="promo__image" src="img/pic_promo-phone.jpg" height="320" width="157" alt="pink-smile"></div>
+
       </div>
 
-    </div>
 
-    <div class="box">
-      <div class="review slider">
+      <div class="box">
         <div class="slider__slides">
-          <div class="slider__slide" id="slide1">
-            <cite class="review__author">Николай Петров</cite>
-            <blockquote class="review__text">
-              <p>
-                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-              </p>
-            </blockquote>
-          </figure>
+          <div class="slider__slide">
+            <div class="review">
+              <cite class="review__author">Николай Петров</cite>
+              <blockquote class="review__text">
+                <p>
+                  "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+                </p>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="box box--bg-grey box--form-trapecium">
-    <div class="slider">
-      <div class="slider__slides">
-        <div class="slider__slide" id="slide1">
 
-          <table class="price-plan">
-            <tr class="price-plan__header">
-              <th class="price-plan__title" colspan="2">
-                Стандарт
-                <span class="price-plan__price">3,99 USD</span>
-              </th>
-            </tr>
+      <div class="box box--bg-grey box--form-trapecium">
+        <div class="slider">
+          <div class="slider__slides">
+            <div class="slider__slide">
 
-            <tr>
-              <td class="price-plan__perq-label">Розовый фильтр</td>
-              <td class="price-plan__perq-state icon icon--enabled" title"Есть">Есть</td>
-            </tr>
+              <table class="price-plan">
+                <tr class="price-plan__header">
+                  <th class="price-plan__title" colspan="2">
+                    Стандарт
+                    <span class="price-plan__price">3,99 USD</span>
+                  </th>
+                </tr>
 
-            <tr>
-              <td class="price-plan__perq-label">Смайлики</td>
-              <td class="price-plan__perq-state icon icon--disabled" title="Нет">Нет</td>
-            </tr>
+                <tr>
+                  <td class="price-plan__perq-label">Розовый фильтр</td>
+                  <td class="price-plan__perq-state" title="Есть">
+                    <span class="icon icon__enabled">Есть</span>
+                  </td>
+                </tr>
 
-            <tr>
-              <td class="price-plan__perq-label">Комментарии</td>
-              <td class="price-plan__perq-state icon icon--disabled" title="Нет">Нет</td>
-            </tr>
-          </table>
+                <tr>
+                  <td class="price-plan__perq-label">Смайлики</td>
+                  <td class="price-plan__perq-state" title="Нет">
+                    <span class="icon icon__disabled">Нет</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="price-plan__perq-label">Комментарии</td>
+                  <td class="price-plan__perq-state" title="Нет">
+                    <span class="icon icon__disabled">Нет</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="box">
+        <div class="contacts">
+          <p class="contacts__header">
+            Остались вопросы?
+            <br>Свяжитесь с нами!</p>
+
+          <dl class="contacts__details">
+            <dt class="contact contact__label">Звоните:</dt>
+            <dd class="contact contact__info">+7 (812) 555-66-66</dd>
+            <dt class="contact contact__label">Пишите:</dt>
+            <dd class="contact contact__info">mail@htmlacademy.ru</dd>
+            <dt class="contact contact__label">Приезжайте в гости:</dt>
+            <dd class="contact contact__info">ул. Большая Конюшенная, 19/8</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="map">
+        <div class="map__inner" id="map"></div>
+      </div>
+    </main>
   </div>
 
-  <div class="box">
-    <div class="contacts">
-      <p class="contacts__header">
-        Остались вопросы?
-        <br>Свяжитесь с нами!</p>
-
-      <dl class="contacts__details">
-        <dt class="contact contact__label">Звоните:</dt>
-        <dd class="contact contact__info">+7 (812) 555-66-66</dd>
-        <dt class="contact contact__label">Пишите:</dt>
-        <dd class="contact contact__info">mail@htmlacademy.ru</dd>
-        <dt class="contact contact__label">Приезжайте в гости:</dt>
-        <dd class="contact contact__info">ул. Большая Конюшенная, 19/8</dd>
-      </dl>
-    </div>
-  </div>
-
-  <div class="map">
-    <div class="map__inner" id="map"></div>
-  </div>
-
-</div>
-</main>
-
-<!-- <p>
-Репозиторий создан для обучения на продвинутом онлайн-интенсиве «
-<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>
-».
+  <!-- <p>
+  Репозиторий создан для обучения на продвинутом онлайн-интенсиве «
+  <a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>
+  ».
 </p>
 -->
 <!-- <script src="js/script.js"></script>
